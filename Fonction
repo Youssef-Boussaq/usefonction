@@ -1,0 +1,17 @@
+def q(n):
+    b = True
+    for i in range(2, int(n**0.5) + 1):  # You only need to check up to the square root of n
+      
+        if n % i == 0:
+            b = False
+            # Once you find a factor, you can stop checking
+        return b
+        
+
+a = int(input("Input the number: "))
+z=q(a)
+if z==False:
+    print ("the numeber is not prime")
+else:
+    print("the number is prime")
+    
